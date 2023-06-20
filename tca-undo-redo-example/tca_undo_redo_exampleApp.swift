@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct tca_undo_redo_exampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CounterView(store: .init(initialState: .init(count: 0), reducer: CounterFeature()))
         }
     }
 }

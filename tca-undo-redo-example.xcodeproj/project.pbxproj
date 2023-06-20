@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C881D0C92A41F289003AF033 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = C881D0C82A41F289003AF033 /* ComposableArchitecture */; };
 		C89890582A41F21C00515DE3 /* tca_undo_redo_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89890572A41F21C00515DE3 /* tca_undo_redo_exampleApp.swift */; };
 		C898905A2A41F21C00515DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89890592A41F21C00515DE3 /* ContentView.swift */; };
 		C898905C2A41F21E00515DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C898905B2A41F21E00515DE3 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C881D0C92A41F289003AF033 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "tca-undo-redo-example";
+			packageProductDependencies = (
+				C881D0C82A41F289003AF033 /* ComposableArchitecture */,
+			);
 			productName = "tca-undo-redo-example";
 			productReference = C89890542A41F21C00515DE3 /* tca-undo-redo-example.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = C898904B2A41F21C00515DE3;
+			packageReferences = (
+				C881D0C72A41F289003AF033 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = C89890552A41F21C00515DE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C881D0C72A41F289003AF033 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C881D0C82A41F289003AF033 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C881D0C72A41F289003AF033 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C898904C2A41F21C00515DE3 /* Project object */;
 }
